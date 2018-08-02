@@ -1,0 +1,50 @@
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ ls
+Applications	Development	Downloads	Movies		Pictures	README.md
+Desktop		Documents	Library		Music		Public
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ cd Documents/Creative\ Technology\ Folder/
+LON-176552-C02R5AKDG8WP:Creative Technology Folder jeffrey_sylvester$ ls
+Emoji Project		Git Directory 2.txt	Git Directory.txt	JStutorial.txt		Past Project
+LON-176552-C02R5AKDG8WP:Creative Technology Folder jeffrey_sylvester$ cd Past\ Project/
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ ls
+the html traffic.html	thecss.css		thejs.js
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ git init
+Initialized empty Git repository in /Users/jeffrey_sylvester/Documents/Creative Technology Folder/Past Project/.git/
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ ls
+the html traffic.html	thecss.css		thejs.js
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ git remote add origin https://github.com/j-syl-klaxon/TrafficLightProject.git
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	the html traffic.html
+	thecss.css
+	thejs.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ git add -A
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ git commit -m 'Initial commit'
+[master (root-commit) e11cc62] Initial commit
+ 3 files changed, 122 insertions(+)
+ create mode 100644 the html traffic.html
+ create mode 100644 thecss.css
+ create mode 100644 thejs.js
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ git push --set-upstream origin master
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.98 KiB | 1.98 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/j-syl-klaxon/TrafficLightProject.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+LON-176552-C02R5AKDG8WP:Past Project jeffrey_sylvester$ 

@@ -1,0 +1,31 @@
+#redLight{   /* dictating the div element with the id "redLight" as a dark red circle*/
+height : 40px ; 
+width : 40px; 
+margin : 1px auto; 
+background-color:#7A0000; 
+border-radius : 40px; 
+border: solid 1px black;
+}
+
+#yellowLight{    /* dictating the div element with the id "yellowLight" as a dark yelllow circle*/
+height : 40px ; 
+width : 40px; 
+margin : 1px auto; 
+background-color:#7A5C00; 
+border-radius : 40px; 
+border: solid 1px black;
+}
+
+#greenLight{    /* dictating the div element with the id "greenLight" as a dark green circle*/
+height : 40px ; 
+width : 40px; 
+margin : 1px auto; 
+background-color:#008000; 
+border-radius : 40px; 
+border: solid 1px black;
+}
+table{     /*dictating the table tag element as a black rectangle*/
+height:160px;
+width:70px;
+background-color:#000000;
+}

@@ -1,0 +1,51 @@
+1. Prerequisites:
+    -Download Git Terminal
+    -Sign up to Github.
+
+2. To make a new repository on Github with folders, etc.:
+    
+    -"ls"(to look at directory)
+    - "cd ...." (change directory to ..Folder Name.. and go further)
+    - "../../../" (go 3 times back from present folder)
+
+    Attack pattern: Open Git Terminal, ls, cd Documents, ls (to check), cd 1st Folder, ls, cd 2nd Folder (if I want all files in 2nd Folder)
+
+    Then:
+        -use "git init" (creates empty repository)
+        -create new repository on Github (with desc. and README if possible.)
+        -use "git remote add origin 'https:// link Github gives you' " on Git terminal (links local, empty git repo with remote repo)
+        - "git status"
+        - "git add -A"
+        - "git status"
+        - "git commit -m "Some rand msg"
+        - "git push -u origin master" 
+
+3. To send changes to remote repository (repo):
+    -Trawl through Directory via Git Terminal & (ls, cd, ../)
+    - "git status"
+    - "git add -A" (if adding modified files)
+    - "git status" (to check - green files)
+    - "git commit -m "Msg to describe change." (to save the files fully and to bundle & push)
+    - "git push" (to send it off)
+
+
+4. To make pull requests to others to change repositories.
+    - "Create a branch"
+    - "git pull 'the_branch'"
+    - "git checkout 'the_branch'"
+    - Follow No. 3...
+    - "git push 'the_branch'"
+    - Change made in remote branch
+    - Make pull request and submit...
+    - Owner of repo says its good and will merge the branch and the master file.
+
+5. Delete Files or Folders in Github...
+    - Click on File (not Folder) in Remote repo
+    - Look for "Trash" icon.
+    - Delete File from website.
+
+OR 
+    - Delete File/Folder manually in Windows' Explorer/ Mac's Finder
+    - Follow No. 3
+
+

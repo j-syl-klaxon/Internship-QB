@@ -1,0 +1,157 @@
+Last login: Tue Jul 31 17:04:23 on ttys000
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Desktop/.DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.CFUserTextEncoding
+	.DS_Store
+	.Trash/
+	.anaconda/
+	.bash_history
+	.bash_profile
+	.bash_profile-anaconda3.bak
+	.bash_profile.pysave
+	.bash_sessions/
+	.condarc
+	.cups/
+	.gitconfig
+	.idlerc/
+	.ipython/
+	.jupyter/
+	.oracle_jre_usage/
+	.pylint.d/
+	.tblive-4/
+	.vscode/
+	Applications/
+	Development/
+	Documents/
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ cd Development
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ ls
+newrepo		testrepol
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ cd newrepo
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ /Users/jeffrey_sylvester/Documents/Creative\ Technology\ Folder/Emoji\ folder 
+-bash: /Users/jeffrey_sylvester/Documents/Creative Technology Folder/Emoji folder: is a directory
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ ls
+Desktop		README.md	helloworld.txt
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ cd /Users/jeffrey_sylvester/Documents/Creative\ Technology\ Folder/Emoji\ folder 
+LON-176552-C02R5AKDG8WP:Emoji folder jeffrey_sylvester$ ls
+CSS_Emoji.css	HTML_Emoji.html	JS_Emoji.js
+LON-176552-C02R5AKDG8WP:Emoji folder jeffrey_sylvester$ git init
+Initialized empty Git repository in /Users/jeffrey_sylvester/Documents/Creative Technology Folder/Emoji folder/.git/
+LON-176552-C02R5AKDG8WP:Emoji folder jeffrey_sylvester$ cd ../
+LON-176552-C02R5AKDG8WP:Creative Technology Folder jeffrey_sylvester$ git clone https://github.com/j-syl-klaxon/emojiproject.git
+Cloning into 'emojiproject'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+LON-176552-C02R5AKDG8WP:Creative Technology Folder jeffrey_sylvester$ cd emojiproject/
+LON-176552-C02R5AKDG8WP:emojiproject jeffrey_sylvester$ ls
+README.md
+LON-176552-C02R5AKDG8WP:emojiproject jeffrey_sylvester$ cd ../
+LON-176552-C02R5AKDG8WP:Creative Technology Folder jeffrey_sylvester$ ls
+Emoji folder		Git Directory.txt	JStutorial.txt		emojiproject
+LON-176552-C02R5AKDG8WP:Creative Technology Folder jeffrey_sylvester$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../../Desktop/.DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../../.CFUserTextEncoding
+	../../.DS_Store
+	../../.Trash/
+	../../.anaconda/
+	../../.bash_history
+	../../.bash_profile
+	../../.bash_profile-anaconda3.bak
+	../../.bash_profile.pysave
+	../../.bash_sessions/
+	../../.condarc
+	../../.cups/
+	../../.gitconfig
+	../../.idlerc/
+	../../.ipython/
+	../../.jupyter/
+	../../.oracle_jre_usage/
+	../../.pylint.d/
+	../../.tblive-4/
+	../../.vscode/
+	../../Applications/
+	../../Development/
+	../
+	../../Downloads/
+	../../Library/
+	../../Movies/
+	../../Music/
+	../../Pictures/
+	../../Public/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Creative Technology Folder jeffrey_sylvester$ cd emojiproject/
+LON-176552-C02R5AKDG8WP:emojiproject jeffrey_sylvester$ ls
+CSS_Emoji.css	HTML_Emoji.html	JS_Emoji.js	README.md
+LON-176552-C02R5AKDG8WP:emojiproject jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	CSS_Emoji.css
+	HTML_Emoji.html
+	JS_Emoji.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:emojiproject jeffrey_sylvester$ git add -A
+LON-176552-C02R5AKDG8WP:emojiproject jeffrey_sylvester$ git commit -m 'Initial commit for emojiproject'
+[master 12db75a] Initial commit for emojiproject
+ 4 files changed, 37 insertions(+), 1 deletion(-)
+ create mode 100644 CSS_Emoji.css
+ create mode 100644 HTML_Emoji.html
+ create mode 100644 JS_Emoji.js
+LON-176552-C02R5AKDG8WP:emojiproject jeffrey_sylvester$ git push
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 797 bytes | 797.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/j-syl-klaxon/emojiproject.git
+   987d11f..12db75a  master -> master
+LON-176552-C02R5AKDG8WP:emojiproject jeffrey_sylvester$ 

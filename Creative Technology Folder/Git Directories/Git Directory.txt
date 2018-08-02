@@ -1,0 +1,273 @@
+Last login: Tue Jul 31 10:49:27 on ttys000
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ gi
+-bash: gi: command not found
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ git remote add origin https://github.com/j-syl-klaxon/newrepo.git
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ git push -u origin master
+Username for 'https://github.com': j-syl-klaxon
+Password for 'https://j-syl-klaxon@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 569 bytes | 569.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/j-syl-klaxon/newrepo.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.CFUserTextEncoding
+	.DS_Store
+	.anaconda/
+	.bash_history
+	.bash_profile
+	.bash_profile-anaconda3.bak
+	.bash_profile.pysave
+	.bash_sessions/
+	.condarc
+	.cups/
+	.gitconfig
+	.idlerc/
+	.ipython/
+	.jupyter/
+	.oracle_jre_usage/
+	.tblive-4/
+	Applications/
+	Documents/
+	Downloads/
+	Library/
+	Movies/
+	Music/
+	Pictures/
+	Public/
+
+nothing added to commit but untracked files present (use "git add" to track)
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ mkdir Development
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ cd Development
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ ls
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ mkdir newrepo
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ ls
+newrepo
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ cd newrepo/
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git init
+Initialized empty Git repository in /Users/jeffrey_sylvester/Development/newrepo/.git/
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git remote add origin https://github.com/j-syl-klaxon/newrepo.git
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git pull
+remote: Counting objects: 10, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 1), reused 4 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+From https://github.com/j-syl-klaxon/newrepo
+ * [new branch]      master     -> origin/master
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ ls
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ cd ../
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ rm -rf newrepo/
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ git clone https://github.com/j-syl-klaxon/newrepo.git
+Cloning into 'newrepo'...
+remote: Counting objects: 10, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 10 (delta 1), reused 4 (delta 0), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ cd newrepo/
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ ls
+Desktop
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ ls
+Desktop
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ cd Desktop/
+LON-176552-C02R5AKDG8WP:Desktop jeffrey_sylvester$ ls
+base1.py	sth.txt
+LON-176552-C02R5AKDG8WP:Desktop jeffrey_sylvester$ cd ../../../
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ ls
+Applications	Development	Downloads	Movies		Pictures
+Desktop		Documents	Library		Music		Public
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ cd Development/
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ ls
+newrepo
+LON-176552-C02R5AKDG8WP:Development jeffrey_sylvester$ cd newrepo/
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ ls
+Desktop
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git checkout -b feature/newCommit
+Switched to a new branch 'feature/newCommit'
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ touch helloworld.txt
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ ls
+Desktop		helloworld.txt
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git status
+On branch feature/newCommit
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	helloworld.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git add helloworld.txt 
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ ls
+Desktop		helloworld.txt
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git commit -m 'Adding hello world'
+[feature/newCommit e5e53a8] Adding hello world
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 helloworld.txt
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git push
+fatal: The current branch feature/newCommit has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin feature/newCommit
+
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git push -u origin master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+Everything up-to-date
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git status
+On branch feature/newCommit
+nothing to commit, working tree clean
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git push -u origin feature/newCommit
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 286 bytes | 286.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/j-syl-klaxon/newrepo.git
+ * [new branch]      feature/newCommit -> feature/newCommit
+Branch 'feature/newCommit' set up to track remote branch 'feature/newCommit' from 'origin'.
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git checkou
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ 
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ 
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git status
+On branch feature/newCommit
+Your branch is up to date with 'origin/feature/newCommit'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git add README.md 
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git commit -m 'Adding readme'
+[feature/newCommit f70c290] Adding readme
+ 1 file changed, 7 insertions(+)
+ create mode 100644 README.md
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 407 bytes | 407.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/j-syl-klaxon/newrepo.git
+   e5e53a8..f70c290  feature/newCommit -> feature/newCommit
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git pull
+remote: Counting objects: 2, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/j-syl-klaxon/newrepo
+   ea836b8..2155ca5  master     -> origin/master
+Updating ea836b8..2155ca5
+Fast-forward
+ README.md      | 7 +++++++
+ helloworld.txt | 0
+ 2 files changed, 7 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 helloworld.txt
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    Desktop/.localized
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git add -A
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    Desktop/.localized
+
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git commit -m 'Removing file'
+[master 16f9fc7] Removing file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 Desktop/.localized
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 353 bytes | 353.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/j-syl-klaxon/newrepo.git
+   2155ca5..16f9fc7  master -> master
+LON-176552-C02R5AKDG8WP:newrepo jeffrey_sylvester$ 
