@@ -1,0 +1,391 @@
+Last login: Thu Aug  2 11:08:27 on ttys000
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ ls
+Applications	Documents	Movies		Public
+Desktop		Downloads	Music		README.md
+Development	Library		Pictures
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ cd Documents/
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ ls
+Business Intelligence Folder	Data Engineering Folder
+Creative Technology Folder	Design Folder
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git stau
+git: 'stau' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git add -A
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git commit -m "Stuuf 7."
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+no changes added to commit
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git push
+To https://github.com/j-syl-klaxon/Int-Detals.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/j-syl-klaxon/Int-Detals.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git pull
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/j-syl-klaxon/Int-Detals
+   31317c2..32d6bb8  master     -> origin/master
+Removing .localized
+CONFLICT (modify/delete): .DS_Store deleted in 32d6bb8472b93f09a25f1f6084cb386fea152042 and modified in HEAD. Version HEAD of .DS_Store left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+	deleted:    .localized
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+
+	deleted by them: .DS_Store
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git add -A
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	deleted:    .localized
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git commit -m 'Merge'
+[master 86cb16a] Merge
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git add -A
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git add Creative Technology Folder/Completed Traffic Light Project
+fatal: pathspec 'Creative' did not match any files
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git add Creative Technology Folder/Completed Traffic Light Project
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ 
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ 
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git add Creative\ Technology\ Folder/Completed\ Traffic\ Light\ Project/
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git push
+Counting objects: 12, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 3.89 KiB | 3.89 MiB/s, done.
+Total 12 (delta 8), reused 0 (delta 0)
+remote: Resolving deltas: 100% (8/8), completed with 4 local objects.
+To https://github.com/j-syl-klaxon/Int-Detals.git
+   32d6bb8..86cb16a  master -> master
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git add -A
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ cd ../
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ ls
+Applications	Development	Downloads	Movies		Pictures	README.md
+Desktop		Documents	Library		Music		Public
+LON-176552-C02R5AKDG8WP:~ jeffrey_sylvester$ cd Documents/
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ ls
+Business Intelligence Folder	Creative Technology Folder	Data Engineering Folder		Design Folder
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Creative Technology Folder/Completed Traffic Light Project (modified content)
+	modified:   Creative Technology Folder/Emoji Project (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ cd Creative\ Technology\ Folder/
+LON-176552-C02R5AKDG8WP:Creative Technology Folder jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+
+	modified:   Completed Traffic Light Project (modified content)
+	modified:   Emoji Project (modified content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Creative Technology Folder jeffrey_sylvester$ cd Completed\ Traffic\ Light\ Project/
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   thejs.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ git add -A
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   thejs.js
+
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ git commit -m 'Adding js'
+[master bc83dc3] Adding js
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ git push
+remote: Repository not found.
+fatal: repository 'https://github.com/j-syl-klaxon/TrafficLightProject.git/' not found
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ defaults write com.apple.finder AppleShowAllFiles YES
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ ls
+the html traffic.html	thecss.css		thejs.js
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ open .
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ defaults write com.apple.finder AppleShowAllFiles YES
+LON-176552-C02R5AKDG8WP:Completed Traffic Light Project jeffrey_sylvester$ cd ../../
+LON-176552-C02R5AKDG8WP:Documents jeffrey_sylvester$ cd Internship/
+LON-176552-C02R5AKDG8WP:Internship jeffrey_sylvester$ git init
+Initialized empty Git repository in /Users/jeffrey_sylvester/Documents/Internship/.git/
+LON-176552-C02R5AKDG8WP:Internship jeffrey_sylvester$ git remote add origin https://github.com/j-syl-klaxon/Internship-QB.git
+LON-176552-C02R5AKDG8WP:Internship jeffrey_sylvester$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	Business Intelligence Folder/
+	Creative Technology Folder/
+	Data Engineering Folder/
+	Design Folder/
+
+nothing added to commit but untracked files present (use "git add" to track)
+LON-176552-C02R5AKDG8WP:Internship jeffrey_sylvester$ rm -rf .DS_Store 
+LON-176552-C02R5AKDG8WP:Internship jeffrey_sylvester$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	Business Intelligence Folder/
+	Creative Technology Folder/
+	Data Engineering Folder/
+	Design Folder/
+
+nothing added to commit but untracked files present (use "git add" to track)
+LON-176552-C02R5AKDG8WP:Internship jeffrey_sylvester$ git add -A
+git coLON-176552-C02R5AKDG8WP:Internship jeffrey_sylvester$ git commit -m 'Adding internship folders'
+[master (root-commit) 1ab8299] Adding internship folders
+g 60 files changed, 627926 insertions(+)
+ create mode 100644 Business Intelligence Folder/.DS_Store
+ create mode 100644 Business Intelligence Folder/AmazingMartEU2.xlsx
+ create mode 100644 Business Intelligence Folder/Camden Tableau Worksheet.twb
+ create mode 100644 Business Intelligence Folder/Internship Data (Leisure).txt
+ create mode 100644 Business Intelligence Folder/Internship Data (Programming Languages).txt
+ create mode 100644 Business Intelligence Folder/Internship Data .xlsx
+ create mode 100644 Business Intelligence Folder/Long-Term-Unemployment-Statistics.xlsx
+ create mode 100644 Business Intelligence Folder/My Internship Viz.twb
+ create mode 100644 Business Intelligence Folder/OfficeSupplies_MAC.csv
+ create mode 100644 Business Intelligence Folder/Road_Collision_Attendants_In_Camden.csv
+ create mode 100644 Business Intelligence Folder/Road_Collision_Casualties_In_Camden.csv
+ create mode 100644 Business Intelligence Folder/Road_Collision_Vehicles_In_Camden.csv
+ create mode 100644 Business Intelligence Folder/Section 5.twb
+ create mode 100644 Business Intelligence Folder/Section 6.twb
+ create mode 100644 Business Intelligence Folder/SuperStoreUS_2015.xlsx
+ create mode 100644 Business Intelligence Folder/Tree_preservations.csv
+ create mode 100644 Business Intelligence Folder/UK-Bank-Customers.csv
+ create mode 100644 Business Intelligence Folder/Winter Olympic Dashboard.twb
+ create mode 100644 Business Intelligence Folder/York Trees Dashboard.twb
+ create mode 100644 Creative Technology Folder/.DS_Store
+ create mode 100644 Creative Technology Folder/Completed Traffic Light Project/.DS_Store
+ create mode 100644 Creative Technology Folder/Completed Traffic Light Project/the html traffic.html
+ create mode 100644 Creative Technology Folder/Completed Traffic Light Project/thecss.css
+ create mode 100644 Creative Technology Folder/Completed Traffic Light Project/thejs.js
+ create mode 100644 Creative Technology Folder/Emoji Project/.DS_Store
+ create mode 100644 Creative Technology Folder/Emoji Project/CSS_Emoji.css
+ create mode 100644 Creative Technology Folder/Emoji Project/Functions.js
+ create mode 100644 Creative Technology Folder/Emoji Project/HTML_Emoji.html
+ create mode 100644 Creative Technology Folder/Emoji Project/Lerp_Color.js
+ create mode 100644 Creative Technology Folder/Emoji Project/Main_JS_Emoji.js
+ create mode 100644 Creative Technology Folder/Emoji Project/README.md
+ create mode 100644 Creative Technology Folder/Git Directories/Git Directory 2.txt
+ create mode 100644 Creative Technology Folder/Git Directories/Git Directory 3.txt
+ create mode 100644 Creative Technology Folder/Git Directories/Git Directory.txt
+ create mode 100644 Creative Technology Folder/GitHub Manual
+ create mode 100644 Creative Technology Folder/Old Emoji Project/CSS_Emoji.css
+ create mode 100644 Creative Technology Folder/Old Emoji Project/Old_HTML_Emoji.html
+ create mode 100644 Creative Technology Folder/Old Emoji Project/Old_JS_Emoji.js
+ create mode 100644 Creative Technology Folder/Sudoku Solver/CSS_Sudoku.css
+ create mode 100644 Creative Technology Folder/Sudoku Solver/HTML_Sudoku.html
+ create mode 100644 Creative Technology Folder/Sudoku Solver/JS_Sudoku.js
+ create mode 100644 Data Engineering Folder/.DS_Store
+ create mode 100644 Data Engineering Folder/Data Folders copy 2/.DS_Store
+ create mode 100644 Data Engineering Folder/Data Folders copy 2/data_fuel_auto2.csv
+ create mode 100644 Data Engineering Folder/Data Folders copy 2/deprecation_19_models copy2.csv
+ create mode 100644 Data Engineering Folder/Data Folders/.DS_Store
+ create mode 100644 Data Engineering Folder/Data Folders/.ipynb_checkpoints/Data Eng Practical #1 -checkpoint.ipynb
+ create mode 100644 Data Engineering Folder/Data Folders/.ipynb_checkpoints/Drawing Tables 2-checkpoint.ipynb
+ create mode 100644 Data Engineering Folder/Data Folders/.ipynb_checkpoints/Drawing Tables-checkpoint.ipynb
+ create mode 100644 Data Engineering Folder/Data Folders/Data Eng Practical #1 .ipynb
+ create mode 100644 Data Engineering Folder/Data Folders/Drawing Tables.ipynb
+ create mode 100644 Data Engineering Folder/Data Folders/data_fuel_auto.csv
+ create mode 100644 Data Engineering Folder/Data Folders/data_join.csv
+ create mode 100644 Data Engineering Folder/Data Folders/deprecation_19_models copy.csv
+ create mode 100644 Design Folder/.DS_Store
+ create mode 100644 Design Folder/Processing folder/.DS_Store
+ create mode 100644 Design Folder/Processing folder/first_sketch/.DS_Store
+ create mode 100644 Design Folder/Processing folder/first_sketch/first_sketch.pde
+ create mode 100644 Design Folder/Sketch Folder/Design_Challenge.sketch
+ create mode 100644 Design Folder/Sketch Folder/Practice Test.sketch
+LON-176552-C02R5AKDG8WP:Internship jeffrey_sylvester$ git push -u origin master
+Counting objects: 70, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (67/67), done.
+Writing objects: 100% (70/70), 5.64 MiB | 2.25 MiB/s, done.
+Total 70 (delta 13), reused 0 (delta 0)
+remote: Resolving deltas: 100% (13/13), done.
+To https://github.com/j-syl-klaxon/Internship-QB.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+LON-176552-C02R5AKDG8WP:Internship jeffrey_sylvester$ 
