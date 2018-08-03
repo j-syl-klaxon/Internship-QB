@@ -1,0 +1,51 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+.sudokuboard {
+    display: grid;/*make a grid*//
+    grid-template-columns: 200px 200px 200px;
+
+    width: 600px;
+    height: 600px;
+
+    border: 1px solid;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: calc(200px / 3) calc(200px / 3) calc(200px / 3);
+
+    width: 200px;
+    height: 200px;
+
+    border: 1px solid;
+}
+
+.boxitem {
+    position: relative;
+    display: inline-block;
+
+    width: calc(200px / 3);
+    height: calc(200px / 3);
+
+    border: 1px solid #dadada;
+
+    text-align: center;
+}
+
+span {
+    position: absolute;/*dictate position of text*/
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%); /*to make the center really center*/
+
+    font-size: 20px;
+    font-weight: bold;
+}
